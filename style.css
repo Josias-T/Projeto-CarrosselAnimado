@@ -1,0 +1,89 @@
+.navbar{
+    display: flex;
+    color: #fff;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+
+.item {
+    display: none;
+}
+
+.item.Active {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: var(--background);
+}
+
+@keyframes toActive {
+    from {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.item.Active .fruit,
+.item.Active .title {
+    animation: toActive 0.5s ease-in-out 1;
+}
+
+.item .title {
+    font-size: 12rem;
+    color: #fff;
+    font-family: System, System-ui, Y;
+    font-weight: bold;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item .fruit {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.item .refri {
+    z-index: 2;
+    width: 600px;
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#prev,
+#next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px Solid #ffffff94;
+    color: #ffffff94;
+    font-size: x-large;
+    font-family: monospace;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 50%;
+}
+
+#prev {
+    left: 30px;
+}
+
+#next {
+    right: 30px;
+}
