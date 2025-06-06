@@ -1,5 +1,5 @@
-# Refri-JS
-Este projeto é uma aplicação web animada, construída utilizando as tecnologias fundamentais do desenvolvimento web: HTML, CSS e JavaScript
+# Projeto carrossel animado
+Este projeto é um carrossel de imagens de refrigerantes com animações , construída utilizando as tecnologias fundamentais do desenvolvimento web: HTML, CSS e JavaScript
 
 
 <img 
